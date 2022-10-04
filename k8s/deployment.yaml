@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: argocd-lab-deployment
+  labels:
+    app: argocd-lab
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: argocd-lab
+  template:
+    metadata:
+      labels:
+        app: argocd-lab
+    spec:
+      containers:
+      - name: argocd-lab
+        image: goapp
+        ports:
+        - containerPort: 8080
