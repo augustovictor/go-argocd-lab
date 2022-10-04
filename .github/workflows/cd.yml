@@ -33,7 +33,7 @@ jobs:
         run: |
           cd k8s
           kustomize edit set image goapp=victoraweb/argocd-lab:${{ github.sha }}
-          cat kustomize.yaml
+          cat kustomization.yaml
           
       - name: Commit
         run: |
