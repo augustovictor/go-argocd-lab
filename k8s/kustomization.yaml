@@ -9,4 +9,4 @@ namespace: goapp
 images:
 - name: goapp
   newName: victoraweb/argocd-lab
-  newTag: 7fc0761ba5047134e4d24c690fea15dfa3ecab63
+  newTag: 3f4c40376b50e46c2da790017521a85ecfd1e052
