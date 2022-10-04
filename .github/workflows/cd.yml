@@ -22,4 +22,5 @@ jobs:
         with:
           context: .
           push: true
+          repository: victoraweb/argocd-lab
           tags: ${{ github.sha }}, latest
